@@ -1,0 +1,8 @@
+# configs e bancos locais dos containers (API keys, usuários, histórico)
+jellyfin/
+radarr/
+sonarr/
+prowlarr/
+qbittorrent/
+.env*
+web/.impeccable/hook.cache.json

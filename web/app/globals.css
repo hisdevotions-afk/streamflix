@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-urbanist);
+  --color-night: #0b0a1a;
+  --color-dusk: #151231;
+  --color-haze: #241d52;
+  --color-iris: #8b7cff;
+  --color-iris-soft: #b9b0ff;
+  --color-mist: #c9c5e6;
+  --color-glass: rgb(255 255 255 / 0.08);
+  --color-glass-line: rgb(255 255 255 / 0.14);
+  --ease-reel: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html { color-scheme: dark; }
+
+body {
+  background: var(--color-night);
+  color: #f4f3ff;
+}
+
+::selection { background: var(--color-iris); color: var(--color-night); }
+:focus-visible { outline: 2px solid var(--color-iris-soft); outline-offset: 3px; }
+
+* { scrollbar-width: thin; scrollbar-color: var(--color-haze) transparent; }
+.no-scrollbar { scrollbar-width: none; }
+
+/* Ambient layer: the violet haze breathes behind the hero copy. */
+@keyframes haze-drift {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); opacity: 0.85; }
+  50% { transform: translate3d(4%, -3%, 0) scale(1.08); opacity: 1; }
+}
+.haze { animation: haze-drift 18s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .haze { animation: none; }
+}
+
+/* video.js chrome in the night palette */
+.video-js .vjs-play-progress, .video-js .vjs-volume-level { background: var(--color-iris); }
+.video-js .vjs-control-bar { background: linear-gradient(to top, rgb(11 10 26 / 0.9), transparent); height: 4em; padding-top: 1em; }
+.video-js .vjs-big-play-button.vjs-big-play-button { border: 0; border-radius: 9999px; width: 2.4em; height: 2.4em; line-height: 2.4em; margin-left: -1.2em; background: rgb(11 10 26 / 0.6); backdrop-filter: blur(12px); box-shadow: 0 0 0 1px rgb(255 255 255 / 0.2); }

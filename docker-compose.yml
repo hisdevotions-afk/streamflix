@@ -1,0 +1,86 @@
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:10.10.7
+    container_name: streamflix_jellyfin
+    ports: ["8096:8096"]
+    volumes:
+      - ./jellyfin/config:/config
+      - ./jellyfin/cache:/cache
+      - ${HOME}/Midia:/media:ro
+    restart: unless-stopped
+    mem_limit: 2g
+
+  # Radarr/Sonarr precisam escrever na biblioteca (importar, renomear, mover).
+  # O Jellyfin continua somente leitura.
+  radarr:
+    image: lscr.io/linuxserver/radarr:latest
+    container_name: streamflix_radarr
+    environment:
+      - PUID=${PUID:-1001}
+      - PGID=${PGID:-1001}
+      - TZ=${TZ:-America/Sao_Paulo}
+    ports: ["7878:7878"]
+    volumes:
+      - ./radarr/config:/config
+      - ${HOME}/Midia:/media
+      - ${HOME}/Downloads/streamflix:/downloads
+    restart: unless-stopped
+    mem_limit: 512m
+
+  sonarr:
+    image: lscr.io/linuxserver/sonarr:latest
+    container_name: streamflix_sonarr
+    environment:
+      - PUID=${PUID:-1001}
+      - PGID=${PGID:-1001}
+      - TZ=${TZ:-America/Sao_Paulo}
+    ports: ["8989:8989"]
+    volumes:
+      - ./sonarr/config:/config
+      - ${HOME}/Midia:/media
+      - ${HOME}/Downloads/streamflix:/downloads
+    restart: unless-stopped
+    mem_limit: 512m
+
+  prowlarr:
+    image: lscr.io/linuxserver/prowlarr:latest
+    container_name: streamflix_prowlarr
+    environment:
+      - PUID=${PUID:-1001}
+      - PGID=${PGID:-1001}
+      - TZ=${TZ:-America/Sao_Paulo}
+    ports: ["9696:9696"]
+    volumes:
+      - ./prowlarr/config:/config
+    restart: unless-stopped
+    mem_limit: 512m
+
+  qbittorrent:
+    image: lscr.io/linuxserver/qbittorrent:latest
+    container_name: streamflix_qbittorrent
+    environment:
+      - PUID=${PUID:-1001}
+      - PGID=${PGID:-1001}
+      - TZ=${TZ:-America/Sao_Paulo}
+      - WEBUI_PORT=8080
+      - TORRENTING_PORT=6881
+    ports:
+      - "8080:8080"
+      - "6881:6881"
+      - "6881:6881/udp"
+    volumes:
+      - ./qbittorrent/config:/config
+      - ${HOME}/Downloads/streamflix:/downloads
+    restart: unless-stopped
+    mem_limit: 512m
+
+  # Proxy p/ o Prowlarr passar por páginas com desafio Cloudflare.
+  flaresolverr:
+    image: ghcr.io/flaresolverr/flaresolverr:latest
+    container_name: streamflix_flaresolverr
+    environment:
+      - LOG_LEVEL=info
+      - TZ=${TZ:-America/Sao_Paulo}
+    ports: ["8191:8191"]
+    restart: unless-stopped
+    mem_limit: 1g

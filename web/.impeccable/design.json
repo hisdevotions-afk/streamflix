@@ -1,0 +1,431 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-20T15:36:30.364661+00:00",
+  "title": "Design System: Streamflix",
+  "extensions": {
+    "colorMeta": {
+      "iris": {
+        "role": "primary",
+        "displayName": "Iris Projector Violet",
+        "canonical": "#8b7cff",
+        "tonalRamp": [
+          "#050029",
+          "#09004c",
+          "#0f0080",
+          "#1600c2",
+          "#260aff",
+          "#6552ff",
+          "#a599ff",
+          "#dfdbff"
+        ]
+      },
+      "iris-soft": {
+        "role": "primary",
+        "displayName": "Soft Iris",
+        "canonical": "#b9b0ff",
+        "tonalRamp": [
+          "#050029",
+          "#09004c",
+          "#0f0080",
+          "#1600c2",
+          "#260aff",
+          "#6552ff",
+          "#a599ff",
+          "#dfdbff"
+        ]
+      },
+      "night": {
+        "role": "neutral",
+        "displayName": "Night",
+        "canonical": "#0b0a1a",
+        "tonalRamp": [
+          "#0c0b1d",
+          "#171537",
+          "#27235c",
+          "#3b368c",
+          "#554ebb",
+          "#8782cf",
+          "#b8b5e3",
+          "#e6e5f5"
+        ]
+      },
+      "dusk": {
+        "role": "neutral",
+        "displayName": "Dusk",
+        "canonical": "#151231",
+        "tonalRamp": [
+          "#0d0b1e",
+          "#181538",
+          "#28225d",
+          "#3d348e",
+          "#574cbd",
+          "#8880d0",
+          "#b9b4e4",
+          "#e6e5f5"
+        ]
+      },
+      "haze": {
+        "role": "neutral",
+        "displayName": "Haze",
+        "canonical": "#241d52",
+        "tonalRamp": [
+          "#0d0b1e",
+          "#191439",
+          "#29215e",
+          "#3f338f",
+          "#5a4abf",
+          "#8a7fd2",
+          "#bab4e4",
+          "#e7e5f6"
+        ]
+      },
+      "hero-dusk": {
+        "role": "neutral",
+        "displayName": "Hero Dusk",
+        "canonical": "#1c1640",
+        "tonalRamp": [
+          "#0d0a1e",
+          "#191439",
+          "#2a215f",
+          "#3f3290",
+          "#5a49c0",
+          "#8a7ed3",
+          "#bab3e5",
+          "#e7e4f6"
+        ]
+      },
+      "scrim-indigo": {
+        "role": "neutral",
+        "displayName": "Indigo Scrim",
+        "canonical": "#141136",
+        "tonalRamp": [
+          "#0b0a1f",
+          "#16123a",
+          "#241f61",
+          "#372e93",
+          "#4f45c4",
+          "#827bd5",
+          "#b6b1e7",
+          "#e5e4f6"
+        ]
+      },
+      "mist": {
+        "role": "neutral",
+        "displayName": "Mist",
+        "canonical": "#c9c5e6",
+        "tonalRamp": [
+          "#0e0c1d",
+          "#1b1735",
+          "#2d2659",
+          "#443a87",
+          "#6054b5",
+          "#8e86cb",
+          "#bdb8e0",
+          "#e8e6f4"
+        ]
+      },
+      "moon-white": {
+        "role": "neutral",
+        "displayName": "Moon White",
+        "canonical": "#f4f3ff",
+        "tonalRamp": [
+          "#030029",
+          "#06004c",
+          "#0b0080",
+          "#1000c2",
+          "#1f0aff",
+          "#6052ff",
+          "#a299ff",
+          "#dedbff"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Pure White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#141414",
+          "#262626",
+          "#404040",
+          "#616161",
+          "#858585",
+          "#a8a8a8",
+          "#cccccc",
+          "#ededed"
+        ]
+      },
+      "glass": {
+        "role": "neutral",
+        "displayName": "Glass",
+        "canonical": "rgb(255 255 255 / 0.08)"
+      },
+      "glass-line": {
+        "role": "neutral",
+        "displayName": "Glass Line",
+        "canonical": "rgb(255 255 255 / 0.14)"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Título da obra no hero e na série; caixa alta, revelado palavra a palavra."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Títulos de fileira e de seção."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Nome no cartão e na linha de episódio."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "Linha única tipo · ano · episódio abaixo do display."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Sinopse, 56-60ch, cor mist."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Texto de pílulas e botões."
+      }
+    },
+    "shadows": [
+      {
+        "name": "projector-glow",
+        "value": "0 10px 30px -10px rgb(255 255 255 / 0.45)",
+        "purpose": "Pílula branca primária em repouso."
+      },
+      {
+        "name": "projector-glow-hover",
+        "value": "0 14px 40px -8px rgb(255 255 255 / 0.6)",
+        "purpose": "Pílula primária no hover."
+      },
+      {
+        "name": "poster-drop",
+        "value": "0 18px 40px -24px rgb(0 0 0 / 0.9)",
+        "purpose": "Cartão de pôster em repouso."
+      },
+      {
+        "name": "poster-drop-hover",
+        "value": "0 28px 60px -20px rgb(0 0 0 / 0.95)",
+        "purpose": "Cartão de pôster levantado."
+      },
+      {
+        "name": "popover-drop",
+        "value": "0 24px 60px -20px rgb(0 0 0 / 0.8)",
+        "purpose": "Painel de resultados da busca."
+      },
+      {
+        "name": "iris-halo",
+        "value": "0 6px 20px -6px rgb(139 124 255 / 0.7)",
+        "purpose": "Bolha do item ativo do rail."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-reel",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Curva de assinatura para chegadas; sem overshoot."
+      },
+      {
+        "name": "ease-exit",
+        "value": "cubic-bezier(0.4, 0, 1, 1)",
+        "purpose": "Saídas."
+      },
+      {
+        "name": "duration-instant",
+        "value": "80ms",
+        "purpose": "Microrespostas."
+      },
+      {
+        "name": "duration-fast",
+        "value": "180ms",
+        "purpose": "Saídas e trocas de estado."
+      },
+      {
+        "name": "duration-normal",
+        "value": "350ms",
+        "purpose": "Entradas de rota, popover, fade de conteúdo."
+      },
+      {
+        "name": "duration-slow",
+        "value": "600ms",
+        "purpose": "Revelação do título, troca de imagem do cartão."
+      },
+      {
+        "name": "duration-reel",
+        "value": "900ms",
+        "purpose": "Cortina do hero (x1.4) e preenchimento de progresso."
+      },
+      {
+        "name": "reel-interval",
+        "value": "9000ms",
+        "purpose": "Tempo de cada destaque antes do rolo avançar."
+      },
+      {
+        "name": "spring-snappy",
+        "value": "stiffness 300, damping 30",
+        "purpose": "Toque em botões, bolha ativa do rail, miniaturas."
+      },
+      {
+        "name": "spring-gentle",
+        "value": "stiffness 160, damping 20",
+        "purpose": "Levantar do cartão de pôster."
+      },
+      {
+        "name": "spring-pop",
+        "value": "stiffness 500, damping 12",
+        "purpose": "Coração do favoritar ao ligar."
+      },
+      {
+        "name": "spring-tilt",
+        "value": "stiffness 220, damping 18, mass 0.6",
+        "purpose": "Inclinação 3D do pôster seguindo o cursor."
+      },
+      {
+        "name": "scale-press",
+        "value": "0.96",
+        "purpose": "Compressão no toque."
+      },
+      {
+        "name": "scale-lift",
+        "value": "1.035",
+        "purpose": "Escala do pôster no hover."
+      },
+      {
+        "name": "route-enter",
+        "value": "opacity 0 + blur(8px) -> 1, 350ms ease-reel",
+        "purpose": "Entrada de rota, só após hidratação."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "md",
+        "value": "768px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Pill",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "A única ação sólida: play/retomar.",
+      "html": "<button class=\"ds-btn-primary\"><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linejoin=\"round\"><path d=\"M6 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L7.5 3.64A1 1 0 0 0 6 4.5z\"/></svg>Retomar</button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 28px 0 20px;border:0;border-radius:9999px;background:#fff;color:var(--color-night,#0b0a1a);font:700 16px Urbanist,sans-serif;box-shadow:0 10px 30px -10px rgb(255 255 255/.45);transition:box-shadow .2s,transform .18s cubic-bezier(.16,1,.3,1);cursor:pointer}.ds-btn-primary svg{transition:transform .2s cubic-bezier(.16,1,.3,1)}.ds-btn-primary:hover{box-shadow:0 14px 40px -8px rgb(255 255 255/.6)}.ds-btn-primary:hover svg{transform:translateX(2px)}.ds-btn-primary:active{transform:scale(.96)}.ds-btn-primary:focus-visible{outline:2px solid #b9b0ff;outline-offset:3px}"
+    },
+    {
+      "name": "Outline Pill",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Ação secundária ao lado da primária (Episódios, Detalhes).",
+      "html": "<button class=\"ds-btn-outline\">Episódios</button>",
+      "css": ".ds-btn-outline{height:48px;padding:0 28px;border:0;border-radius:9999px;background:transparent;color:#fff;font:600 16px Urbanist,sans-serif;box-shadow:inset 0 0 0 1px rgb(255 255 255/.45);transition:background .2s,box-shadow .2s;cursor:pointer}.ds-btn-outline:hover{background:rgb(255 255 255/.1);box-shadow:inset 0 0 0 1px #fff}.ds-btn-outline:active{transform:scale(.96)}.ds-btn-outline:focus-visible{outline:2px solid #b9b0ff;outline-offset:3px}"
+    },
+    {
+      "name": "Glass Pill",
+      "kind": "button",
+      "refersTo": "button-glass",
+      "description": "Voltar e controles flutuantes sobre imagem.",
+      "html": "<button class=\"ds-btn-glass\"><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m12 19-7-7 7-7M19 12H5\"/></svg>Início</button>",
+      "css": ".ds-btn-glass{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 20px 0 16px;border:0;border-radius:9999px;background:rgb(255 255 255/.08);color:#fff;font:600 14px Urbanist,sans-serif;box-shadow:inset 0 0 0 1px rgb(255 255 255/.14);backdrop-filter:blur(12px);transition:background .15s;cursor:pointer}.ds-btn-glass:hover{background:rgb(255 255 255/.15)}.ds-btn-glass:focus-visible{outline:2px solid #b9b0ff;outline-offset:3px}"
+    },
+    {
+      "name": "Favorite Circle",
+      "kind": "button",
+      "refersTo": "icon-circle",
+      "description": "Controle circular de vidro; ligado vira branco sólido.",
+      "html": "<button class=\"ds-icon-circle\" aria-label=\"Favoritar\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7z\"/></svg></button>",
+      "css": ".ds-icon-circle{display:grid;place-items:center;width:48px;height:48px;border:0;border-radius:9999px;background:rgb(255 255 255/.08);color:#fff;box-shadow:inset 0 0 0 1px rgb(255 255 255/.14);backdrop-filter:blur(12px);transition:background .2s,color .2s;cursor:pointer}.ds-icon-circle:hover{background:rgb(255 255 255/.15)}.ds-icon-circle:active{background:#fff;color:#0b0a1a;transform:scale(.96)}.ds-icon-circle:focus-visible{outline:2px solid #b9b0ff;outline-offset:3px}"
+    },
+    {
+      "name": "Search Pill",
+      "kind": "input",
+      "refersTo": "search-pill",
+      "description": "Busca no topo direito do palco.",
+      "html": "<label class=\"ds-search\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"><path d=\"m21 21-4.34-4.34M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16z\"/></svg><input placeholder=\"Buscar filme ou série\"></label>",
+      "css": ".ds-search{display:flex;align-items:center;gap:12px;width:22rem;height:48px;padding:0 16px;border-radius:9999px;background:rgb(11 10 26/.6);color:#c9c5e6;box-shadow:inset 0 0 0 1px rgb(255 255 255/.14);backdrop-filter:blur(24px);transition:background .2s,box-shadow .2s}.ds-search:focus-within{background:rgb(11 10 26/.75);box-shadow:inset 0 0 0 1px rgb(255 255 255/.4)}.ds-search input{flex:1;min-width:0;border:0;background:transparent;color:#fff;font:500 14px Urbanist,sans-serif;outline:none}.ds-search input::placeholder{color:#c9c5e6}"
+    },
+    {
+      "name": "Rail",
+      "kind": "nav",
+      "refersTo": "icon-circle",
+      "description": "Rail de 76px com círculos de vidro; ativo é bolha branca 18% com halo iris.",
+      "html": "<nav class=\"ds-rail\"><a class=\"ds-rail-item is-active\" href=\"#\" aria-label=\"Início\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"/></svg></a><a class=\"ds-rail-item\" href=\"#\" aria-label=\"Séries\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 21h10M4 3h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z\"/></svg></a></nav>",
+      "css": ".ds-rail{display:flex;flex-direction:column;align-items:center;gap:16px;width:76px;padding:28px 0;background:rgb(11 10 26/.4);border-right:1px solid rgb(255 255 255/.14);backdrop-filter:blur(24px)}.ds-rail-item{display:grid;place-items:center;width:44px;height:44px;border-radius:9999px;background:rgb(255 255 255/.08);color:#c9c5e6;transition:color .15s,transform .2s cubic-bezier(.16,1,.3,1)}.ds-rail-item:hover{color:#fff;transform:scale(1.1)}.ds-rail-item.is-active{background:rgb(255 255 255/.18);color:#fff;box-shadow:inset 0 0 0 1px rgb(255 255 255/.25),0 6px 20px -6px rgb(139 124 255/.7)}.ds-rail-item:focus-visible{outline:2px solid #b9b0ff;outline-offset:3px}"
+    },
+    {
+      "name": "Poster Card",
+      "kind": "card",
+      "refersTo": "poster-card",
+      "description": "Cartão 16:10 que inclina, levanta e revela progresso iris.",
+      "html": "<a class=\"ds-poster\" href=\"#\"><span class=\"ds-poster-art\"></span><span class=\"ds-poster-play\"><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"currentColor\"><path d=\"M6 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L7.5 3.64A1 1 0 0 0 6 4.5z\"/></svg></span><span class=\"ds-poster-body\"><b>Serie Teste</b><small>T1E01 · 23 min restantes</small><i><em style=\"width:40%\"></em></i></span></a>",
+      "css": ".ds-poster{position:relative;display:block;width:19rem;aspect-ratio:16/10;overflow:hidden;border-radius:16px;background:#151231;color:#f4f3ff;text-decoration:none;box-shadow:inset 0 0 0 1px rgb(255 255 255/.14),0 18px 40px -24px rgb(0 0 0/.9);transition:transform .35s cubic-bezier(.16,1,.3,1),box-shadow .3s}.ds-poster:hover{transform:translateY(-6px) scale(1.035);box-shadow:inset 0 0 0 1px rgb(255 255 255/.14),0 28px 60px -20px rgb(0 0 0/.95)}.ds-poster:focus-visible{outline:2px solid #b9b0ff;outline-offset:3px}.ds-poster-art{position:absolute;inset:0;background:linear-gradient(to top,#0b0a1a,rgb(11 10 26/.3),transparent),#241d52}.ds-poster-play{position:absolute;top:12px;right:12px;display:grid;place-items:center;width:40px;height:40px;border-radius:9999px;background:#fff;color:#0b0a1a}.ds-poster-body{position:absolute;left:0;right:0;bottom:0;padding:16px;font-family:Urbanist,sans-serif}.ds-poster-body b{display:block;font-size:18px;font-weight:700}.ds-poster-body small{display:block;margin-top:2px;font-size:14px;color:#c9c5e6}.ds-poster-body i{display:block;margin-top:12px;height:4px;border-radius:9999px;background:rgb(255 255 255/.2);overflow:hidden}.ds-poster-body em{display:block;height:100%;background:#8b7cff}"
+    },
+    {
+      "name": "Resume Badge",
+      "kind": "chip",
+      "refersTo": "resume-badge",
+      "description": "Selo iris na linha do episódio retomável.",
+      "html": "<span class=\"ds-badge\">Retomar</span>",
+      "css": ".ds-badge{display:inline-block;padding:2px 8px;border-radius:9999px;background:#8b7cff;color:#0b0a1a;font:700 11px Urbanist,sans-serif}"
+    }
+  ],
+  "narrative": {
+    "northStar": "A Sala de Projeção de Uma Tela Só",
+    "overview": "A casa é uma sala escura com uma única obra em cartaz. O hero ocupa a viewport inteira: noite índigo-violeta à esquerda, onde uma névoa violeta respira atrás do título, e a imagem ou vídeo sangrando pela direita a partir de 28% da largura. A faixa de miniaturas embaixo é o projetor trocando o rolo, com uma barra de tempo branca que avança. Só depois disso a página desce para as fileiras.\n\nA densidade é baixa e a hierarquia é brutalmente simples: um título gigante em caixa alta, uma linha de metadados, uma pílula branca para apertar play. Todo o resto (rail, busca, favoritar, voltar) é vidro fosco em pílula ou círculo, recuado para não competir com a obra. A cor é quase toda noite; o violeta aparece só onde diz \"você está aqui\".\n\nO sistema precisa ficar bom com metadados escassos: sem arte, a peça cai para um bloco `haze` com o título, nunca para arte inventada.",
+    "keyCharacteristics": [
+      "Fundo noite índigo, imagem sangrando à direita, gradiente-cortina da esquerda.",
+      "Display Urbanist 800 em caixa alta, apertado, revelado linha a linha.",
+      "Branco puro só para título e ação primária.",
+      "Controles secundários são vidro fosco em pílula ou círculo.",
+      "Violeta (iris) reservado para progresso, retomada, posição atual e foco.",
+      "Movimento com curva de chegada confiante, sem overshoot, exceto o \"pop\" do favoritar."
+    ],
+    "rules": [
+      {
+        "name": "The Iris Means Here Rule",
+        "body": "Iris marca só posição: progresso, retomada, item atual, foco. Se o elemento não responde \"onde eu estou?\", ele não é violeta.",
+        "section": "colors"
+      },
+      {
+        "name": "The One White Action Rule",
+        "body": "Por bloco há uma única pílula branca sólida, e ela é sempre play/retomar. Ações secundárias são contorno ou vidro.",
+        "section": "colors"
+      },
+      {
+        "name": "The Shout Once Rule",
+        "body": "Caixa alta e tracking negativo pertencem só ao display. Títulos de seção e cartões ficam em caixa normal.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Clock Rule",
+        "body": "Códigos de episódio e tempos usam números tabulares.",
+        "section": "typography"
+      },
+      {
+        "name": "The Light Not Lift Rule",
+        "body": "Elementos escuros afundam com sombra preta; só a ação primária brilha. Nada flutua com sombra colorida, exceto a marca de posição do rail.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** pôr a pílula branca de play como a ação mais próxima de qualquer obra.",
+      "**Do** mostrar posição salva onde o item aparece: barra iris e \"parou em · restantes\".",
+      "**Do** sangrar a imagem pela direita e cobrir a esquerda com o véu índigo (scrim-indigo) para o texto.",
+      "**Do** usar vidro fosco (glass + glass-line + backdrop-blur) para todo controle que não é a ação primária.",
+      "**Do** puxar durações, curvas e springs de lib/motion.ts; nunca inline.",
+      "**Do** cair para um bloco haze com o título quando não houver arte."
+    ],
+    "donts": [
+      "**Don't** usar iris como fundo de botão de ação ou decoração; ele é só marcador de posição e foco.",
+      "**Don't** usar mais de uma pílula branca sólida por bloco.",
+      "**Don't** abrir uma página com banner + fileiras de cards iguais como primeira leitura; a obra em cartaz vem antes.",
+      "**Don't** usar caixa alta ou tracking negativo fora do display.",
+      "**Don't** inventar títulos, sinopses ou arte para preencher metadados ausentes.",
+      "**Don't** usar o vermelho e as bordas de 8px da tela /automacao; ela é legado fora do sistema."
+    ]
+  }
+}
